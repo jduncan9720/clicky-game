@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "image": "/clicky-game/public/images/cirilla.jpg",
+      "clicked": false
+    },
+    {
+    "id": 2,
+    "image": "/clicky-game/images/dandelion.jpg",
+    "clicked": false
+    },
+    {
+    "id": 3,
+    "image": "/clicky-game/images/dijkstra.jpg",
+    "clicked": false
+    },
+    {
+    "id": 4,
+    "image": "/clicky-game/images/eredin.jpg",
+    "clicked": false
+    },
+    {
+    "id": 5,
+    "image": "/clicky-game/images/geralt.jpg",
+    "clicked": false
+    },
+    {
+    "id": 6,
+    "image": "/clicky-game/images/katakan.jpg",
+    "clicked": false
+    },
+    {
+    "id": 7,
+    "image": "/clicky-game/images/kiera.jpg",
+    "clicked": false
+    },
+    {
+    "id": 8,
+    "image": "/clicky-game/images/spriggan.jpg",
+    "clicked": false
+    },
+    {
+    "id": 9,
+    "image": "/clicky-game/images/swamphag.jpg",
+    "clicked": false
+    },
+    {
+    "id": 10,
+    "image": "/clicky-game/images/tris.jpg",
+    "clicked": false
+    },
+    {
+    "id": 11,
+    "image": "/clicky-game/images/vesemir.jpg",
+    "clicked": false
+    },
+    {
+    "id": 12,
+    "image": "/clicky-game/images/Yennefer.jpg",
+    "clicked": false
+    }
+  ]
