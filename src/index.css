@@ -24,3 +24,8 @@ code {
   text-align: center;
   padding-top: 15px;
 }
+.title {
+  font-size: 35px;
+  color:white;
+  font-family: 'Josefin Sans', sans-serif;
+}
