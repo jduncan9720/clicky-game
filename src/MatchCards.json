@@ -1,62 +1,62 @@
 [
   {
     "id": 1,
-    "image": "/images/cirilla.jpg",
+    "image": "/clicky-game/images/cirilla.jpg",
     "clicked": false
   },
   {
   "id": 2,
-  "image": "/images/dandelion.jpg",
+  "image": "/clicky-game/images/dandelion.jpg",
   "clicked": false
   },
   {
   "id": 3,
-  "image": "/images/dijkstra.jpg",
+  "image": "/clicky-game/images/dijkstra.jpg",
   "clicked": false
   },
   {
   "id": 4,
-  "image": "/images/eredin.jpg",
+  "image": "/clicky-game/images/eredin.jpg",
   "clicked": false
   },
   {
   "id": 5,
-  "image": "/images/geralt.jpg",
+  "image": "/clicky-game/images/geralt.jpg",
   "clicked": false
   },
   {
   "id": 6,
-  "image": "/images/katakan.jpg",
+  "image": "/clicky-game/images/katakan.jpg",
   "clicked": false
   },
   {
   "id": 7,
-  "image": "/images/kiera.jpg",
+  "image": "/clicky-game/images/kiera.jpg",
   "clicked": false
   },
   {
   "id": 8,
-  "image": "/images/spriggan.jpg",
+  "image": "/clicky-game/images/spriggan.jpg",
   "clicked": false
   },
   {
   "id": 9,
-  "image": "/images/swamphag.jpg",
+  "image": "/clicky-game/images/swamphag.jpg",
   "clicked": false
   },
   {
   "id": 10,
-  "image": "/images/tris.jpg",
+  "image": "/clicky-game/images/tris.jpg",
   "clicked": false
   },
   {
   "id": 11,
-  "image": "/images/vesemir.jpg",
+  "image": "/clicky-game/images/vesemir.jpg",
   "clicked": false
   },
   {
   "id": 12,
-  "image": "/images/Yennefer.jpg",
+  "image": "/clicky-game/images/Yennefer.jpg",
   "clicked": false
   }
 ]
