@@ -2,14 +2,15 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
 import GameCard from "./components/GameSection";
+import Footer from './components/Footer';
 import matches from "./MatchCards";
 
 class App extends React.Component {
   state = {
     matches,
-    correctGuesses: 0,
+    currentScore: 0,
     bestScore: 0,
-    clickMessage: "Click on an image to gain points! Click on the same one twice and you lose."
+    clickMessage: "Try and click each character only once. Click on the same character twice and you lose."
   };
 
   handleImageClicked = async id => {
@@ -20,27 +21,27 @@ class App extends React.Component {
 
       moviePosters.classList.add("apply-shake");
       this.setState({
-        correctGuesses: 0,
-        clickMessage:"You already clicked on that one. Try again.",
+        currentScore: 0,
+        clickMessage:"Oops that's twice!! You lose.  Try again.",
       });
       this.handleResetAllCards();
-    } else if(this.state.correctGuesses < 11) {
+    } else if(this.state.currentScore < 11) {
       clickedMatch[0].clicked = true;
       // increment the appropriate counter
-      this.setState({correctGuesses: this.state.correctGuesses + 1}, () => {
-        if (this.state.correctGuesses > this.state.bestScore){
-          this.setState({ bestScore: this.state.correctGuesses });
+      this.setState({currentScore: this.state.currentScore + 1}, () => {
+        if (this.state.currentScore > this.state.bestScore){
+          this.setState({ bestScore: this.state.currentScore});
         }
       });
-      this.setState({clickMessage:  "Great! You haven't click on that one yet! Keep going!" });
+      this.setState({clickMessage:  "Good guess! You haven't click on that one yet! Keep going!" });
       this.handleShuffleCards();
     } else {
       // Set its value to true
       clickedMatch[0].clicked = true;
       // restart the guess counter
-      this.state.correctGuesses = 0;
+      this.state.currentScore = 0;
       // Egg on the user to play again
-      this.state.clickMessage = "WOW!!! You got ALL of them!!! Now, let's see if you can do it again!";
+      this.state.clickMessage = "Winner!! You cilcked all 12 characters without repeating Now do it again!";
       this.setState({ bestScore: 12 });
       this.handleResetAllCards();
     }
@@ -62,7 +63,7 @@ class App extends React.Component {
     for (let i = 0 ; i < this.state.matches.length ; i++){
       matches[i].clicked = false;
       this.setState({
-        correctGuesses: 0,
+        currentScore: 0,
         matches: matches
       });
       this.handleShuffleCards()
@@ -72,7 +73,7 @@ class App extends React.Component {
   render() {
     return (
         <div className="App">
-          <Navbar score={this.state.correctGuesses} topScore={this.state.bestScore} />
+          <Navbar score={this.state.currentScore} topScore={this.state.bestScore} />
           <div className="jumbotron py-3">
             <h4>{this.state.clickMessage}</h4>
           </div>
@@ -91,6 +92,7 @@ class App extends React.Component {
             </div>
 
           </div>
+          <Footer />
         </div>
     );
   };
