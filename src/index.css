@@ -12,20 +12,3 @@ code {
     monospace;
 }
 
-#footer {
-  position: fixed;
-  height: 50px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:
-  #343b3f;
-  color: white;
-  text-align: center;
-  padding-top: 15px;
-}
-.title {
-  font-size: 35px;
-  color:white;
-  font-family: 'Josefin Sans', sans-serif;
-}

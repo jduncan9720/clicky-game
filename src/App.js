@@ -74,7 +74,7 @@ class App extends React.Component {
     return (
         <div className="App">
           <Navbar score={this.state.currentScore} topScore={this.state.bestScore} />
-          <div className="jumbotron py-3">
+          <div className="subHeading">
             <h4>{this.state.clickMessage}</h4>
           </div>
           <div className="container">
